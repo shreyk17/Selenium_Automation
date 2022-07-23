@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="none" name="Failed suite [Suite]">
+  <parameter name="primary-borrower-base-name1" value="https://nbl.one/"/>
+  <test parallel="none" name="Test(failed)" preserve-order="true">
+    <classes>
+      <class name="testcases.Testcase2">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- testcases.Testcase2 -->
+      <class name="testcases.Testcase1">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- testcases.Testcase1 -->
+      <class name="testcases.Testcase4">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- testcases.Testcase4 -->
+      <class name="testcases.Testcase3">
+        <methods>
+          <include name="main"/>
+        </methods>
+      </class> <!-- testcases.Testcase3 -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
