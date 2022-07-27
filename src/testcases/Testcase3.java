@@ -26,7 +26,7 @@ public class Testcase3 {
 	 */
 	@Parameters({ "primary-borrower-base-name1"})
 	@Test
-	public static void main(String[] args) throws InterruptedException {
+	public void testcase3() throws InterruptedException {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shrey\\Downloads\\chromedriver_win32\\chromedriver.exe");
@@ -41,16 +41,16 @@ public class Testcase3 {
 		
 		Thread.sleep(3000);
 		
-		driver.findElement(By.xpath("//button[normalize-space()='Accommodation']")).click();
+		//driver.findElement(By.xpath("//button[normalize-space()='Accommodation']")).click();
 		
-		driver.findElement(By.xpath("//a[@href='/gigs/category/Accommodation']//button[@type='button']//span[contains(text(),'See all')]")).click();
+		//driver.findElement(By.xpath("//a[@href='/gigs/category/Accommodation']//button[@type='button']//span[contains(text(),'See all')]")).click();
 		
 		//List<WebElement> title = driver.findElements(By.xpath("//p[@class=\"text-secondary-200 h-18 break-words text-left font-serif text-base font-semibold -tracking-wider line-clamp-3\"]"));
 		
 		// all the links present in the webpage
 		List<WebElement> links = driver.findElements(By.tagName("a"));
 		
-		//System.out.print(links.size());
+		System.out.print("Links count : " + links.size());
 		
 		for (WebElement webElement : links) {
             String name = webElement.getText();
@@ -58,8 +58,8 @@ public class Testcase3 {
         }
 		
 		//get title
-		List<WebElement> title = driver.findElements(By.xpath("//*[@class=\"text-secondary-200 h-18 break-words text-left font-serif text-base font-semibold -tracking-wider line-clamp-3\"]"));
-		//System.out.print(title.size());
+		List<WebElement> title = driver.findElements(By.xpath("//p[@class=\"text-secondary-200 h-18 break-words text-left font-serif text-base font-semibold -tracking-wider line-clamp-3\"]"));
+		System.out.print("Title count : "+title.size());
 		for (WebElement webElement1: title) {
             String name1 = webElement1.getText();
             System.out.println(name1);
@@ -67,7 +67,7 @@ public class Testcase3 {
 		
 		//get price 
 		List<WebElement> price = driver.findElements(By.xpath("//*[@class='font-serif text-xs font-medium -tracking-wider text-secondary-dark-200']"));
-		//System.out.println(price.size());
+		System.out.println("Price count :" + price.size());
 		for (WebElement webElement2 : price) {
             String name2 = webElement2.getText();
             System.out.println(name2);

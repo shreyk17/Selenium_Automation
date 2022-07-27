@@ -32,7 +32,7 @@ public class Testcase1 {
 	@SuppressWarnings("deprecation")	
 	@Parameters({ "primary-borrower-base-name1"})
 	@Test
-	public static void main(String[] args) {
+	public void testcase1() {
 		// TODO Auto-generated method stub
 		
 		

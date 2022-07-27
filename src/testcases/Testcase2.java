@@ -28,7 +28,7 @@ public class Testcase2 {
 	 */
 	@Parameters({ "primary-borrower-base-name1"})
 	@Test
-	public static void main(String[] args) {
+	public void testcase2() {
 		// TODO Auto-generated method stub
 		
 		System.setProperty("webdriver.chrome.driver", "C:\\Users\\shrey\\Downloads\\chromedriver_win32\\chromedriver.exe");
